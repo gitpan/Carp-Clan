@@ -1,18 +1,31 @@
-#!perl
+#!perl -w
+
+###############################################################################
+##                                                                           ##
+##    Copyright (c) 2001 - 2004 by Steffen Beyer.                            ##
+##    All rights reserved.                                                   ##
+##                                                                           ##
+##    This package is free software; you can redistribute it                 ##
+##    and/or modify it under the same terms as Perl itself.                  ##
+##                                                                           ##
+###############################################################################
 
 use strict;
+
 use ExtUtils::MakeMaker;
 
-my %PREREQ_PM = (
-		 'Test::Exception' => 0,
-		);
+use Config;
 
 WriteMakefile(
-    NAME          => 'Carp::Clan',
-    AUTHOR        => 'Joshua ben Jore <jjore@cpan.org>',
-    VERSION_FROM  => 'lib/Carp/Clan.pm',
-    ABSTRACT_FROM => 'lib/Carp/Clan.pod',
-    PREREQ_PM     => \ % PREREQ_PM,
-    dist          => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean => { FILES => 'Carp-Clan-*', },
+    'NAME'              => 'Carp::Clan',
+    'AUTHOR'            => 'Steffen Beyer <STBEY@cpan.org>',
+    'VERSION_FROM'      => 'Clan.pm',
+    'ABSTRACT_FROM'     => 'Clan.pod',
+    'dist'              => { COMPRESS => 'gzip -9', SUFFIX => 'gz', },
+#   for ActivePerl:
+    ($] >= 5.005 && $^O eq 'MSWin32' && $Config::Config{'archname'} =~ /-object\b/i ?
+        ('CAPI'         => 'TRUE') : ())
 );
+
+__END__
+
