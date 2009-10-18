@@ -1,15 +1,12 @@
-                     ====================================
-                       Package "Carp::Clan" Version 5.4
-                     ====================================
+                ============================
+                    Package "Carp::Clan"
+                ============================
 
+             Copyright (c) 2006-2009 by Joshua ben Jore
+             All rights reserved.
 
-This package is available for download either from my web site at
-
-                  http://www.engelschall.com/u/sb/download/
-
-or from any CPAN (= "Comprehensive Perl Archive Network") mirror server:
-
-               http://www.perl.com/CPAN/authors/id/S/ST/STBEY/
+             Copyright (c) 2001-2009 by Steffen Beyer
+             All rights reserved.
 
 
 Abstract:
@@ -26,20 +23,12 @@ occurs will be blamed on the "outsider" script or modules not belonging
 to this "clan".
 
 
-Legal issues:
--------------
+What's new in this release:
+---------------------------
 
-This package with all its parts is
-
-Copyright (c) 2001 - 2009 by Steffen Beyer.
-All rights reserved.
-
-This package is free software; you can use, modify and redistribute
-it under the same terms as Perl itself, i.e., under the terms of
-the "Artistic License" or the "GNU General Public License".
-
-Please refer to the files "Artistic.txt" and "GNU_GPL.txt"
-in this distribution, respectively, for details!
+Version 6.03  18.10.2009
+ + Re-release to resolve confusion in CPAN caused by intermediate release
+   of Carp::Clan 5.4 (backport of bugfix #50560 below for Perls < v5.6.0)
 
 
 Prerequisites:
@@ -64,7 +53,7 @@ As usual:
 Changes over previous versions:
 -------------------------------
 
-Please refer to the file "CHANGES.txt" in this distribution for a more
+Please refer to the file "Changes" in this distribution for a more
 detailed version history log.
 
 
@@ -140,19 +129,13 @@ make several modules (more than one) work together and
 appear as though they were only one.
 
 
-Author's note:
---------------
+Contact Authors:
+----------------
 
-If you have any questions, suggestions or need any assistance, please
-let me know!
+Joshua ben Jore <jjore@cpan.org>
+http://perlmonks.org/?node=diotalevi
 
-Please do send feedback, this is essential for improving this module
-according to your needs!
+Steffen Beyer <stbey@cpan.org>
+http://www.engelschall.com/u/sb/download/
 
-I hope you will find this module useful. Enjoy!
 
-Yours,
---
-  Steffen Beyer <STBEY@cpan.org> http://www.engelschall.com/u/sb/
-  "There is enough for the need of everyone in this world, but not
-   for the greed of everyone." - Mohandas Karamchand "Mahatma" Gandhi

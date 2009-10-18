@@ -1,21 +1,14 @@
 --- #YAML:1.0
-name:               Carp-Clan
-version:            5.4
-abstract:           Report errors from perspective of caller of a "clan" of modules
-author:
+name:                Carp-Clan
+version:             6.03
+abstract:            Report errors from perspective of caller of a "clan" of modules
+license:             ~
+author:              
     - Steffen Beyer <STBEY@cpan.org>
-license:            unknown
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
-build_requires:
-    ExtUtils::MakeMaker:  0
-requires:  {}
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.54
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
+    Test::Exception:               0
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3
